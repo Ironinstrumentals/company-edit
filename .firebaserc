@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "company-edit": {
+      "hosting": {
+        "company-edit": [
+          "company-edit"
+        ]
+      }
+    }
+  }
+}

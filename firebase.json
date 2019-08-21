@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "company-edit",
+      "public": "dist/company-edit",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
