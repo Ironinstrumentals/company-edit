@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from '../database.service';
 
 @Component({
   selector: 'app-create',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private DataBaseService: DatabaseService) { }
+  document = document;
   ngOnInit() {
   }
-
+  createNew() {
+    this.DataBaseService.saveCompany();
+  }
 }

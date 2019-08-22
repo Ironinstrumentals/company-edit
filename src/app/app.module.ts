@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { CreateComponent } from './create/create.component';
+import { DatabaseService } from './database.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { CreateComponent } from './create/create.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DatabaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
